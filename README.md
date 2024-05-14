@@ -9,7 +9,7 @@ The code samples, the initialization package and the documentation provided here
 
 ## License
 
-Check the MIT License tab :point_up:
+Check the License tab :point_up:
 
 ## Installation
 
