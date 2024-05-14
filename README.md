@@ -7,7 +7,7 @@ You have discovered Yousign API and want to integrate it fast and without issues
 This repository contains code examples to integrate the Yousign API into Salesforce. We will connect through named credentials with an API Key.
 The code samples, the initialization package and the documentation provided here complete but does not substitute the [Yousign API documentation](https://developers.yousign.com/docs/introduction-new) where you will find a [dedicated Salesforce section](https://developers.yousign.com/docs/integration-salesforce-yousign) :rocket:
 
-## Licence
+## License
 
 Check the MIT License tab :point_up:
 
