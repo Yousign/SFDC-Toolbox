@@ -43,4 +43,5 @@ We gives access to Users through `Named Credentials` with `Permission Sets`. Thi
 
 ### Data model
 
-***TODO***
+We create some fields and object in Salesforce that match the Yousign object structure. This is a model based on the functionalities provided with this toolbox and do not support all of the features available in Yousign API.
+![Schema detailing the Yousign Custom Objects and Custom Fields contained in this package](/images/SF_YS_DataModel.jpg)

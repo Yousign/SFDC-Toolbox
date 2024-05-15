@@ -9,6 +9,10 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Contact.YS_ExternalId__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
         <members>YS_Prod</members>
         <members>YS_Sandbox</members>
         <name>ExternalCredential</name>
