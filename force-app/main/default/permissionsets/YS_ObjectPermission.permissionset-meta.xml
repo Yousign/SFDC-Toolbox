@@ -3,6 +3,11 @@
     <description>Gives access to the object and fields of the Yousign Data Model</description>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.YS_ExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>YS_Document__c.ExternalId__c</field>
         <readable>true</readable>
     </fieldPermissions>
