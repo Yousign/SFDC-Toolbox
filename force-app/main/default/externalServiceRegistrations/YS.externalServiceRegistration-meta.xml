@@ -2,7 +2,7 @@
 <ExternalServiceRegistration xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Open API formatted Schema of Yousign API</description>
     <label>YS</label>
-    <namedCredentialReference>YS_Prod</namedCredentialReference>
+    <namedCredentialReference>YS_Sandbox</namedCredentialReference>
     <operations>
         <active>true</active>
         <name>deletex2dcontactsx2dcontactid</name>
