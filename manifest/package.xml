@@ -3,6 +3,9 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>YS_Configuration__c</members>
+        <members>YS_Document__c</members>
+        <members>YS_SignatureRequest__c</members>
+        <members>YS_Signer__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -15,11 +18,26 @@
         <name>ExternalServiceRegistration</name>
     </types>
     <types>
+        <members>YS_Signature_Request_Record_Page</members><!-- TODO add actions after deployed -->
+        <name>Flexipage</name>
+    </types>
+    <types>
+        <members>YS_DeliveryMode</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>YS_Document__c-YS Document Layout</members>
+        <members>YS_SignatureRequest__c-YS Signature Request Layout</members>
+        <members>YS_Signer__c-YS Signer Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
         <members>YS_Prod</members>
         <members>YS_Sandbox</members>
         <name>NamedCredential</name>
     </types>
     <types>
+        <members>YS_ObjectPermission</members>
         <members>YS_AccessProd</members>
         <members>YS_AccessSandbox</members>
         <name>PermissionSet</name>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SignatureRequest__c</fullName>
+    <externalId>false</externalId>
+    <label>Signature Request</label>
+    <referenceTo>YS_SignatureRequest__c</referenceTo>
+    <relationshipLabel>YS Documents</relationshipLabel>
+    <relationshipName>YS_Documents</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nature__c</fullName>
+    <externalId>false</externalId>
+    <label>Nature</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>attachment</fullName>
+                <default>false</default>
+                <label>Attachment</label>
+            </value>
+            <value>
+                <fullName>signable_document</fullName>
+                <default>false</default>
+                <label>Signable Document</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
