@@ -30,7 +30,8 @@ Check the License tab :point_up:
 
 ### Access Management
 
-***TODO***
+We gives access to Users through `Named Credentials` with `Permission Sets`. This allows to keep the API keys secrets and to fine tune user accesses to match business needs.
+![Schema explaining how users get accesses to use Yousign API](/images/YS_SF_AccessManagement.jpg)
 
 ### Sending information to Yousign from Salesforce
 

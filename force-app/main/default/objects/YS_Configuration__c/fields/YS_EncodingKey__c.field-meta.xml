@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>YS_EncodingKey__c</fullName>
+    <description>Encoding key of the webhook used by Yousign Application connected to the organization</description>
+    <externalId>false</externalId>
+    <label>YS Encoding Key</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
