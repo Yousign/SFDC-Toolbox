@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!-- @testCoverage: -->
+<!-- @testCoverage: YS_INVOCABLE_GetSignedDocument_Test,YS_INVOCABLE_UploadDocument_Test,YS_Service_Test,YS_MultipartUtil_Test,YS_Utils_Test,YS_WebhookListener_Test,YS_WebhookDispatcher_Test -->
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>YS_INVOCABLE_GetSignedDocument</members>
+        <members>YS_INVOCABLE_GetSignedDocument_Test</members>
+        <members>YS_INVOCABLE_UploadDocument</members>
+        <members>YS_INVOCABLE_UploadDocument_Test</members>
+        <members>YS_Service</members>
+        <members>YS_Service_Test</members>
+        <members>YS_SignatureRequestService</members>
+        <members>YS_SignerService</members>
+        <members>YS_DataTestFactory</members>
+        <members>YS_MultipartUtil</members>
+        <members>YS_MultipartUtil_Test</members>
+        <members>YS_Utils</members>
+        <members>YS_Utils_Test</members>
+        <members>YS_WebhookListener</members>
+        <members>YS_WebhookListener_Test</members>
+        <members>YS_WebhookDispatcher</members>
+        <members>YS_WebhookDispatcher_Test</members>
+        <name>ApexClass</name>
+    </types>
     <types>
         <members>YS_Configuration__c</members>
         <members>YS_Document__c</members>
