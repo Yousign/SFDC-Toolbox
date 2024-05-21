@@ -142,7 +142,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>YS_ObjectPermission</label>
+    <label>YS_ObjectsPermissions</label>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -170,4 +170,8 @@
         <object>YS_Signer__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <tabSettings>
+        <tab>YS_SignatureRequest__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>

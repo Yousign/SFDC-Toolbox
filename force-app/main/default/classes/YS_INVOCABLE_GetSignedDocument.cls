@@ -5,12 +5,6 @@ public without sharing class YS_INVOCABLE_GetSignedDocument {
     private static final Integer TIMEOUT = 30000;
     @testVisible private static final String CLASS_NAME = 'YS_INVOCABLE_GetSignedDocument';
 
-    // Unused as of now
-    // @future(callout=true)
-    // public static void getDocumentsFuture(String srId) {
-    //     getDocuments(new List<String> { srId });
-    // }
-
     /**
     * @description Get the signed documents of a signature request in Yousign
     * @author Simon Persenot | 18-12-2023 

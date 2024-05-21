@@ -33,6 +33,16 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>FlowStyles_NotificationError</members>
+        <members>FlowStyles_NotificationSuccess</members>
+        <members>FlowStyles_NotificationWarning</members>
+        <name>CustomLabel</name>
+    </types>
+    <types>
+        <members>YS_SignatureRequest__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
         <members>YS_Prod</members>
         <members>YS_Sandbox</members>
         <name>ExternalCredential</name>
@@ -61,7 +71,7 @@
         <name>NamedCredential</name>
     </types>
     <types>
-        <members>YS_ObjectPermission</members>
+        <members>YS_ObjectsPermissions</members>
         <members>YS_AccessProd</members>
         <members>YS_AccessSandbox</members>
         <name>PermissionSet</name>
