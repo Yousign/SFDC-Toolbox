@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>  
+        <targetConfig targets="lightning__AppPage,lightning__FlowScreen">
+            <property name="objectType" type="String" label="Object Name" description="API Name of the Object."/>
+            <property name="recordId" type="String" label="Record Id" description="Id of the record of which you want to display the info."/>
+            <property name="fields" type="String" default="Id,Name" description="Api Names of the fields you want to display. Separated by a coma."/>
+            <property name="icon" type="String" description="Icon to use. E.g. standard:account"/>
+            <property name="title" type="String" description="Title of the box."/>
+            <property name="width" type="String" default="100%" description="Width of the box displayed"/>
+            <property name="align" type="String" default="left" description="Alignment of the box. Values are left, center, right"/>
+            <property name="addLink" type="Boolean" default="false" description="Add a link to the record on the title"/>
+            <property name="linkTarget" type="String" description="_blank, _new, _self, _workspaceTab, _subtab"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

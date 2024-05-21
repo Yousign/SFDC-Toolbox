@@ -1,0 +1,10 @@
+<template>
+    <template lwc:if={fileId}>
+        <template for:each={pageList} for:item="pageNb">
+            <img key={pageNb} class="slds-align_absolute-center" src={url} data-pagenb={pageNb} style={pdfHeight} onload={urlByPage} onerror={onErrorImage}/>
+        </template>
+    </template>
+    <template lwc:else>
+        <lightning-card>No PDF File ID found. Please specify PDF File ID.</lightning-card>
+    </template>
+</template>

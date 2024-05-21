@@ -1,0 +1,5 @@
+.recordBox {
+    width: var(--boxwidth, 500px);
+    margin-left: var(--alignLeft, 0);
+    margin-right: var(--alignRight, auto);
+}

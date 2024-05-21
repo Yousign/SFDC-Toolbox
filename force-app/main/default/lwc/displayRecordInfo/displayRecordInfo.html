@@ -1,0 +1,29 @@
+<template>
+    <!-- Record Display -->
+    <div class="slds-p-bottom_large slds-p-left_large" lwc:ref="container">
+        
+        <template if:true={showData}>
+            <lightning-record-view-form
+                record-id={recordId}
+                object-api-name={objectType}
+            >
+                <div class="slds-box recordBox">
+                    <template if:true={showTitle}>
+                        <p class="slds-text-heading_small slds-form-element_horizontal">
+                            <template if:true={icon}>
+                                <lightning-icon icon-name={icon} size="small"></lightning-icon>&nbsp;&nbsp;
+                            </template>
+                            <template lwc:if={addLink}>
+                                <a href={linkUrl} target={linkTarget} onclick={handleNavigation}>{title}</a>
+                            </template>
+                            <template lwc:else> {title} </template>
+                        </p>
+                    </template>
+                    <template for:each={fieldsArray} for:item="field">
+                        <lightning-output-field field-name={field} key={field}></lightning-output-field>
+                    </template>
+                </div>
+            </lightning-record-view-form>
+        </template>
+    </div>
+</template>

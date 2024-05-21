@@ -36,6 +36,7 @@
         <members>FlowStyles_NotificationError</members>
         <members>FlowStyles_NotificationSuccess</members>
         <members>FlowStyles_NotificationWarning</members>
+        <members>FlowStyles_SectionHeader</members>
         <name>CustomLabel</name>
     </types>
     <types>
@@ -56,6 +57,11 @@
         <name>Flexipage</name>
     </types>
     <types>
+        <members>YS_SCR_SendSignatureRequest</members>
+        <members>YS_SUB_SCR_ErrorMessage</members>
+        <name>Flow</name>
+    </types>
+    <types>
         <members>YS_DeliveryMode</members>
         <name>GlobalValueSet</name>
     </types>
@@ -65,6 +71,11 @@
         <members>YS_Signer__c-YS Signer Layout</members>
         <name>Layout</name>
     </types>
+	<types>
+		<members>displayRecordInfo</members>
+		<members>util_showPDF</members>
+		<name>LightningComponentBundle</name>
+	</types>
     <types>
         <members>YS_Prod</members>
         <members>YS_Sandbox</members>

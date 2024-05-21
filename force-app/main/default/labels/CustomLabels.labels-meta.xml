@@ -24,4 +24,12 @@
         <shortDescription>FlowStyles_NotificationWarning</shortDescription>
         <value>&lt;div class=&quot;slds-scoped-notification slds-theme_warning&quot; role=&quot;status&quot;&gt;</value>
     </labels>
+    <labels>
+        <fullName>FlowStyles_SectionHeader</fullName>
+        <categories>UTILS-FLOW</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FlowStyles_SectionHeader</shortDescription>
+        <value>&lt;div class=&quot;slds-section slds-section__title slds-theme_shade slds-p-horizontal_small&quot;&gt;</value>
+    </labels>
 </CustomLabels>
