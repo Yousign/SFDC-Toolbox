@@ -9,6 +9,14 @@
         <value>&lt;div class=&quot;slds-scoped-notification slds-theme_error&quot; role=&quot;status&quot;&gt;</value>
     </labels>
     <labels>
+        <fullName>FlowStyles_NotificationInfo</fullName>
+        <categories>UTILS-FLOW</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FlowStyles_NotificationInfo</shortDescription>
+        <value>&lt;div class=&quot;slds-scoped-notification slds-theme_info&quot; role=&quot;status&quot;&gt;</value>
+    </labels>
+    <labels>
         <fullName>FlowStyles_NotificationSuccess</fullName>
         <categories>UTILS-FLOW</categories>
         <language>en_US</language>

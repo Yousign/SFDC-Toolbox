@@ -22,6 +22,10 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>YS_FakeDocumentEn</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
         <members>YS_Configuration__c</members>
         <members>YS_Document__c</members>
         <members>YS_SignatureRequest__c</members>
@@ -34,6 +38,7 @@
     </types>
     <types>
         <members>FlowStyles_NotificationError</members>
+        <members>FlowStyles_NotificationInfo</members>
         <members>FlowStyles_NotificationSuccess</members>
         <members>FlowStyles_NotificationWarning</members>
         <members>FlowStyles_SectionHeader</members>
@@ -86,6 +91,10 @@
         <members>YS_AccessProd</members>
         <members>YS_AccessSandbox</members>
         <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>YS_StyleAssets</members>
+        <name>StaticResource</name>
     </types>
     <version>60.0</version>
 </Package>

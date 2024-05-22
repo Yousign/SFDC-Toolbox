@@ -1,0 +1,214 @@
+/* ============================================= */
+/* ===                FONTS                  === */
+/* ============================================= */
+@font-face {
+    font-family: 'recoleta-regular';
+    font-display: swap;
+    src: url("./fonts/recoleta/recoleta-regular.woff2") format("woff2"), url("./fonts/recoleta/recoleta-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+@font-face {
+    font-family: 'recoleta-medium';
+    font-display: swap;
+    src: url("./fonts/recoleta/recoleta-medium.woff2") format("woff2"), url("./fonts/recoleta/recoleta-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+@font-face {
+    font-family: 'recoleta-semibold';
+    font-display: swap;
+    src: url("./fonts/recoleta/recoleta-semibold.woff2") format("woff2"), url("./fonts/recoleta/recoleta-semibold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+@font-face {
+    font-family: 'recoleta-bold';
+    font-display: swap;
+    src: url("./fonts/recoleta/recoleta-bold.woff2") format("woff2"), url("./fonts/recoleta/recoleta-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+@font-face {
+    font-family: 'urw-geometric';
+    font-display: swap;
+    src: url("./fonts/urw-geometric/URWGeometric-Regular.woff2") format("woff2"), url("./fonts/urw-geometric/URWGeometric-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal
+}
+@font-face {
+    font-family: 'urw-geometric-medium';
+    font-display: swap;
+    src: url("./fonts/urw-geometric/URWGeometric-Medium.woff2") format("woff2"), url("./fonts/urw-geometric/URWGeometric-Medium.woff") format("woff");
+    font-style: normal;
+    font-weight: normal
+}
+@font-face {
+    font-family: 'urw-geometric-bold';
+    font-display: swap;
+    src: url("./fonts/urw-geometric/URWGeometric-Bold.woff2") format("woff2"), url("./fonts/urw-geometric/URWGeometric-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: normal
+}
+
+/* ============================================= */
+/* ===               GENERAL                 === */
+/* ============================================= */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    display: block;
+    background-color: #FFF;
+    position: relative;
+    /* width: 813px; */
+    overflow: hidden;
+}
+
+.header, .footer, .main-content {
+    position: relative;
+}
+.fl-100 {
+    float: left;
+    width: 100%;
+}
+.section.no-mt {
+    margin-top: 0;
+}
+
+* {
+    font-family: "urw-geometric", "Arial", "Helvetica", "Verdana", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #032a43;
+}
+
+.bg-pastel-pink {
+    background-color: #f9bda3;
+}
+
+.bold {
+    font-weight: 700;
+    color: inherit;
+}
+
+/* ============================================= */
+/* ===                HEADER                 === */
+/* ============================================= */
+.header {
+    height: 36px;
+    padding: 48px 1px 152px 1px;
+}
+.header-logo {
+    position: absolute;
+    height: 48px;
+    right: 90px;
+}
+
+/* ============================================= */
+/* ===             MAIN CONTENT              === */
+/* ============================================= */
+#title
+{
+    background-color: #032a43;
+    position: absolute;
+    left: -66px;
+    width: 560px;
+    height: 132px;
+}
+
+h1 {
+    margin: 6px 0 11px;
+    color: #FAFAFA;
+    font-family: 'recoleta-regular', "Arial", "Helvetica", "Verdana", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 120px;
+}
+h2 {
+    font-family: 'recoleta-regular', "Arial", "Helvetica", "Verdana", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    margin-left: 48px;
+}
+.highlight {
+    font-size:  22px;
+    line-height: 28px;
+    margin: 75px 0 16px;
+}
+.page-title
+{
+    height: 108px;
+    background-repeat: no-repeat;
+    margin-left: 18px;
+    padding: 36px 0 0 0;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.section {
+    position: relative;
+    margin-top: 28px;
+    padding: 0 66px;
+}
+
+/* signature */
+#signature
+{
+    position: relative;
+    margin-top: 64px;
+}
+#signature-wrapper {
+    width: 275px;
+    height: 118px;
+    background: #EBEAEA;
+    border-radius: 5px;
+    text-align: center;
+}
+#signature-wrapper > div {
+    padding-top: 90px;
+}
+#signature-anchor {
+    position: absolute;
+    text-align: left;
+    top: 3px;
+    left: 12px;
+    display: block;
+    color: #EBEAEA;
+}
+
+/* ============================================= */
+/* ===                FOOTER                 === */
+/* ============================================= */
+.footer {
+    float: left;
+    position: relative;
+    padding: 30px 1px;
+    width: 100%;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #f9bda3;
+}
+.footer-page-number, .footer-copyright {
+    float: left;
+}
+.footer-page-number {
+    width: 10%;
+    text-align: right;
+}
+.footer-copyright {
+    width: 80%;
+    text-align: center;
+}
