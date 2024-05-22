@@ -26,6 +26,10 @@
         <name>ApexPage</name>
     </types>
     <types>
+        <members>YS_Demo</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
         <members>YS_Configuration__c</members>
         <members>YS_Document__c</members>
         <members>YS_SignatureRequest__c</members>
@@ -58,6 +62,7 @@
         <name>ExternalServiceRegistration</name>
     </types>
     <types>
+        <members>Yousign_Try_it_yourself</members>
         <members>YS_Signature_Request_Record_Page</members><!-- TODO add actions after deployed -->
         <name>Flexipage</name>
     </types>
@@ -80,6 +85,10 @@
 		<members>ys_util_displayRecordInfo</members>
 		<members>ys_util_showPDF</members>
 		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>YS_SignatureRequest__c.All</members>
+		<name>ListView</name>
 	</types>
     <types>
         <members>YS_Prod</members>
