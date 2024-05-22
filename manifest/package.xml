@@ -77,8 +77,8 @@
         <name>Layout</name>
     </types>
 	<types>
-		<members>displayRecordInfo</members>
-		<members>util_showPDF</members>
+		<members>ys_util_displayRecordInfo</members>
+		<members>ys_util_showPDF</members>
 		<name>LightningComponentBundle</name>
 	</types>
     <types>
