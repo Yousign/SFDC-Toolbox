@@ -37,6 +37,7 @@
     </types>
     <types>
         <members>YS_Configuration__c</members>
+        <members>YS_Event__e</members>
         <members>YS_Document__c</members>
         <members>YS_SignatureRequest__c</members>
         <members>YS_Signer__c</members>
