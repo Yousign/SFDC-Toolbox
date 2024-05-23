@@ -27,7 +27,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Document to Sign Preview</value>
+                    <value>Document preview</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>pageName</name>

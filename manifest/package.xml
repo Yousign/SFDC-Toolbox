@@ -6,6 +6,8 @@
         <members>YS_INVOCABLE_GetSignedDocument_Test</members>
         <members>YS_INVOCABLE_UploadDocument</members>
         <members>YS_INVOCABLE_UploadDocument_Test</members>
+        <members>YS_INVOCABLE_VisualForceToPDF</members>
+        <members>YS_INVOCABLE_VisualForceToPDF_Test</members>
         <members>YS_Service</members>
         <members>YS_Service_Test</members>
         <members>YS_SignatureRequestService</members>
@@ -24,6 +26,10 @@
     <types>
         <members>YS_FakeDocumentEn</members>
         <name>ApexPage</name>
+    </types>
+    <types>
+        <members>iconavatar</members>
+        <name>ContentAsset</name>
     </types>
     <types>
         <members>YS_Demo</members>

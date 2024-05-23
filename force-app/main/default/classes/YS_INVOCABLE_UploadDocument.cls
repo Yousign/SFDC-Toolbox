@@ -1,7 +1,7 @@
 /**
- * @description       : 
+ * @description       : Apex class managing the document upload on a signature request in Yousign
  * @author            : Simon Persenot
- * @group             : 
+ * @group             : INVOCABLE
  * @last modified on  : 04-12-2023
  * @last modified by  : Simon Persenot
  * @testCoverage      : YS_INVOCABLE_UploadDocument_Test

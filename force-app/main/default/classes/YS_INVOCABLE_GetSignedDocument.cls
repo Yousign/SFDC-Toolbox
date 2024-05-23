@@ -1,3 +1,11 @@
+/**
+ * @description       : Retrieve the signed document of a signature request in Yousign and attach it to the Signature Request in Salesforce
+ * @author            : Simon Persenot
+ * @group             : INVOCABLE
+ * @last modified on  : 23-05-2024
+ * @last modified by  : Simon Persenot
+ * @testCoverage      : YS_INVOCABLE_GetSignedDocument_Test
+**/
 public without sharing class YS_INVOCABLE_GetSignedDocument {
     private static final String BASE_PATH = '/v3';
     private static final String ENDPOINT = '/signature_requests/{0}/documents/download';

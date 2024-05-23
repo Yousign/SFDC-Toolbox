@@ -1,10 +1,19 @@
+/**
+ * @description       : Apex class containing utility methods used in the Yousign package
+ * @author            : Simon Persenot
+ * @group             : 
+ * @last modified on  : 23-05-2024
+ * @last modified by  : Simon Persenot
+ * @testCoverage      : 
+**/
 public with sharing class YS_Utils {
-    public final static String ERR_MISSING_PROPERTIES  = 'ERR_MISSING_PROPERTIES';
-    public final static String ERR_NOT_FOUND           = 'ERR_NOT_FOUND';
-    public final static String ERR_NO_DATA             = 'ERR_NO_DATA';
-    public final static String ERR_NULL_PARAM          = 'ERR_NULL_PARAM';
-    public final static String ERR_UNSUPORTED_DATA     = 'ERR_UNSUPORTED_DATA';
-    public final static String ERR_UNOVERRIDDEN_METHOD = 'ERR_UNOVERRIDDEN_METHOD';
+    public final static String ERR_MISSING_PROPERTIES      = 'ERR_MISSING_PROPERTIES';
+    public final static String ERR_NOT_FOUND               = 'ERR_NOT_FOUND';
+    public final static String ERR_NO_DATA                 = 'ERR_NO_DATA';
+    public final static String ERR_NULL_PARAM              = 'ERR_NULL_PARAM';
+    public final static String ERR_UNSUPORTED_DATA         = 'ERR_UNSUPORTED_DATA';
+    public final static String ERR_UNOVERRIDDEN_METHOD     = 'ERR_UNOVERRIDDEN_METHOD';
+    public final static String ERR_BULKIFIED_NOT_SUPPORTED = 'ERR_BULKIFIED_NOT_SUPPORTED';
     
     /**
     * @description Serialization of t
