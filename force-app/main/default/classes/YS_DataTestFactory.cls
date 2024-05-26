@@ -1,8 +1,8 @@
 @isTest
 public with sharing class YS_DataTestFactory {
     public static final Datetime EVENT_TIME = Datetime.newInstance(2023, 10, 28, 11, 30, 00);
-    private static final String SR_ID = 'abcdef01-abce-abdc-abcd-abcdef012345';
-    private static final String SIGNER_ID = 'abcdef01-abce-abdc-abcd-123456789012';
+    public static final String SR_ID = 'abcdef01-abce-abdc-abcd-abcdef012345';
+    public static final String SIGNER_ID = 'abcdef01-abce-abdc-abcd-123456789012';
 
     public static YS_WebhookListener.WebhookPayload getPayload(String useCase)
     {

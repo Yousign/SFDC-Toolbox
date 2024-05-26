@@ -6,7 +6,7 @@
  * @last modified by  : Simon Persenot
  * @testCoverage      : YS_WebhookDispatcher_Test
 **/
-public without sharing class YS_SignatureRequestService {
+public with sharing class YS_SignatureRequestService {
 
     /**
     * @description update signature request status if it is not an obsolete message
@@ -15,14 +15,22 @@ public without sharing class YS_SignatureRequestService {
     * @param srId 
     * @param eventTime 
     **/
-    public static void newEvent(String status, String srId, Datetime eventTime)
+    public static void newEvent(YS_WebhookListener.WebhookPayload payload, Datetime eventTime)
     {
-        YS_SignatureRequest__c sr = [SELECT Id, Status__c, LastEventDate__c FROM YS_SignatureRequest__c WHERE ExternalId__c = :srId LIMIT 1];
-        if (sr.LastEventDate__c == null || sr.LastEventDate__c < eventTime)
+        YS_event__e e = new YS_Event__e(
+            Type__c = payload.event_name,
+            Status__c = payload.data.signature_request.status,
+            RecordId__c = payload.data.signature_request.id,
+            Datetime__c = eventTime
+        );
+        if (Test.isRunningTest())
         {
-            sr.Status__c = status;
-            sr.LastEventDate__c = eventTime;
-            update sr;
+            insert new Task(
+                Subject = 'YS_SignatureRequestService.newEventDebug',
+                Description = e.Type__c + '|' + e.Status__c + '|' + e.RecordId__c + '|' + e.Datetime__c
+            );
         }
+        
+        EventBus.publish(new List<YS_Event__e> { e });
     }
 }

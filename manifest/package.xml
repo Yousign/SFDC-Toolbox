@@ -76,6 +76,7 @@
     <types>
         <members>YS_SCR_SendSignatureRequest</members>
         <members>YS_SUB_SCR_ErrorMessage</members>
+        <members>YS_TRG_YSE_EventManagement</members>
         <name>Flow</name>
     </types>
     <types>

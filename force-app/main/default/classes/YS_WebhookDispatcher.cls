@@ -21,16 +21,16 @@ public with sharing class YS_WebhookDispatcher {
             Datetime eventTime = Datetime.newInstance(Long.valueOf(payload.event_time + '000'));
             switch on eventType {
                 when 'signature_request' {
-                    YS_SignatureRequestService.newEvent(payload.data.signature_request.status, payload.data.signature_request.id, eventTime);
+                    YS_SignatureRequestService.newEvent(payload, eventTime);
                 }
                 when 'signer' {
-                    YS_SignerService.newEvent(payload.data.signer.status, payload.data.signer.id, eventTime);
+                    YS_SignerService.newEvent(payload, eventTime);
                 }
                 when else {
-                    // do nothing as :
-                    // - contact updates are not used in our implementation
-                    // - approvers are not used in our implementation
-                    // - electronic seals are not used in our implementation
+                    // - contact updates 
+                    // - approvers 
+                    // - electronic seals
+                    // not done
                     return;
                 }
             }

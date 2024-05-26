@@ -6,7 +6,7 @@
  * @last modified by  : Simon Persenot
  * @testCoverage      : YS_WebhookDispatcher_Test
 **/
-public without sharing class YS_SignerService {
+public with sharing class YS_SignerService {
 
     /**
     * @description update signer status if it is not an obsolete message
@@ -15,14 +15,22 @@ public without sharing class YS_SignerService {
     * @param signerId 
     * @param eventTime 
     **/
-    public static void newEvent(String status, String signerId, Datetime eventTime)
+    public static void newEvent(YS_WebhookListener.WebhookPayload payload, Datetime eventTime)
     {
-        YS_Signer__c signer = [SELECT Id, Status__c, LastEventDate__c FROM YS_Signer__c WHERE ExternalId__c = :signerId LIMIT 1];
-        if (signer.LastEventDate__c == null || signer.LastEventDate__c < eventTime)
+        YS_event__e e = new YS_Event__e(
+            Type__c = payload.event_name,
+            Status__c = payload.data.signer.status,
+            RecordId__c = payload.data.signer.id,
+            Datetime__c = eventTime
+        );
+        if (Test.isRunningTest())
         {
-            signer.Status__c = status;
-            signer.LastEventDate__c = eventTime;
-            update signer;
+            insert new Task(
+                Subject = 'YS_SignerService.newEventDebug',
+                Description = e.Type__c + '|' + e.Status__c + '|' + e.RecordId__c + '|' + e.Datetime__c
+            );
         }
+
+        EventBus.publish(new List<YS_Event__e> { e });
     }
 }
