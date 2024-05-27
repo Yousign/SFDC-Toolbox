@@ -96,6 +96,8 @@
 	</types>
 	<types>
 		<members>YS_SignatureRequest__c.All</members>
+		<members>YS_SignatureRequest__c.OngoingSignatureRequests</members>
+		<members>YS_SignatureRequest__c.SignedSignatureRequests</members>
 		<name>ListView</name>
 	</types>
     <types>
