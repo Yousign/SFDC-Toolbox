@@ -52,6 +52,11 @@
                 <default>false</default>
                 <label>Rejected</label>
             </value>
+            <value>
+                <fullName>declined</fullName>
+                <default>false</default>
+                <label>Declined</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

@@ -4,7 +4,7 @@
     <assignments>
         <name>SET_SignerValues</name>
         <label>Set Signer values</label>
-        <locationX>798</locationX>
+        <locationX>1238</locationX>
         <locationY>494</locationY>
         <assignmentItems>
             <assignToReference>GET_Signer.Status__c</assignToReference>
@@ -50,7 +50,7 @@
     <decisions>
         <name>DEC_CreateTask</name>
         <label>Create a task ?</label>
-        <locationX>798</locationX>
+        <locationX>1238</locationX>
         <locationY>710</locationY>
         <defaultConnectorLabel>Nothing left to do</defaultConnectorLabel>
         <rules>
@@ -120,11 +120,24 @@
         </rules>
     </decisions>
     <decisions>
+        <description>SR not found can be OK as it can happen for a Signature Request created in the App directly for example</description>
         <name>DEC_NewestEvent</name>
         <label>Newest event ?</label>
-        <locationX>336</locationX>
+        <locationX>182</locationX>
         <locationY>386</locationY>
         <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>DEC_NewestEvent_SrNotExisting</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GET_SR</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>SR not found</label>
+        </rules>
         <rules>
             <name>DEC_NewestEvent_Newest</name>
             <conditionLogic>or</conditionLogic>
@@ -151,9 +164,21 @@
     <decisions>
         <name>DEC_NewestEventSigner</name>
         <label>Newest Event ?</label>
-        <locationX>952</locationX>
+        <locationX>1238</locationX>
         <locationY>386</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>DEC_NewestEventSigner_NotFound</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GET_Signer</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Signer not Found</label>
+        </rules>
         <rules>
             <name>DEC_NewestEventSigner_Newest</name>
             <conditionLogic>or</conditionLogic>
@@ -180,7 +205,7 @@
     <decisions>
         <name>DEC_ObjectEvent</name>
         <label>Object Event ?</label>
-        <locationX>809</locationX>
+        <locationX>1040</locationX>
         <locationY>170</locationY>
         <defaultConnectorLabel>Not supported</defaultConnectorLabel>
         <rules>
@@ -309,7 +334,7 @@ CASE({!$Record.Type__c},
     <recordCreates>
         <name>INS_Task</name>
         <label>Create Task</label>
-        <locationX>666</locationX>
+        <locationX>1106</locationX>
         <locationY>818</locationY>
         <inputAssignments>
             <field>ActivityDate</field>
@@ -369,7 +394,7 @@ CASE({!$Record.Type__c},
     <recordLookups>
         <name>GET_Signer</name>
         <label>Get Signer</label>
-        <locationX>952</locationX>
+        <locationX>1238</locationX>
         <locationY>278</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -390,7 +415,7 @@ CASE({!$Record.Type__c},
     <recordLookups>
         <name>GET_SR</name>
         <label>Get SR</label>
-        <locationX>336</locationX>
+        <locationX>182</locationX>
         <locationY>278</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -421,7 +446,7 @@ CASE({!$Record.Type__c},
     <recordUpdates>
         <name>UPD_Signer</name>
         <label>Update Signer</label>
-        <locationX>798</locationX>
+        <locationX>1238</locationX>
         <locationY>602</locationY>
         <connector>
             <targetReference>DEC_CreateTask</targetReference>
@@ -429,7 +454,7 @@ CASE({!$Record.Type__c},
         <inputReference>GET_Signer</inputReference>
     </recordUpdates>
     <start>
-        <locationX>683</locationX>
+        <locationX>914</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>DEC_ObjectEvent</targetReference>

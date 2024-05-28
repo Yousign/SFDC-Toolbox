@@ -70,11 +70,13 @@
     </types>
     <types>
         <members>Yousign_Try_it_yourself</members>
-        <members>YS_Signature_Request_Record_Page</members><!-- TODO add actions after deployed -->
+        <members>YS_Signature_Request_Record_Page</members>
         <name>Flexipage</name>
     </types>
     <types>
         <members>YS_SCR_SendSignatureRequest</members>
+        <members>YS_SCR_SRE_DownloadSignedDocument</members>
+        <members>YS_SCR_SRE_SendManualReminder</members>
         <members>YS_SUB_SCR_ErrorMessage</members>
         <members>YS_TRG_YSE_EventManagement</members>
         <name>Flow</name>
@@ -110,6 +112,21 @@
         <members>YS_AccessProd</members>
         <members>YS_AccessSandbox</members>
         <name>PermissionSet</name>
+    </types>
+	<types>
+        <members>YS_SignatureRequest__c.DownloadSignedDocuments</members>
+        <members>YS_SignatureRequest__c.SendReminder</members>
+        <name>QuickAction</name>
+	</types>
+    <types>
+        <members>unfiled$public</members>
+        <members>unfiled$public/YS_Time_to_Sign_by_Auth_Mode_LFt</members>
+        <members>unfiled$public/YS_Signature_Requests_by_Status_WVE</members>
+        <name>Report</name>
+    </types>
+    <types>
+        <members>YS_Signers</members>
+        <name>ReportType</name>
     </types>
     <types>
         <members>YS_StyleAssets</members>

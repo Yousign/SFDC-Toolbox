@@ -80,6 +80,9 @@
         <actionListContext>Record</actionListContext>
     </platformActionList>
     <relatedLists>
+        <relatedList>RelatedFileList</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>NAME</fields>
         <fields>ExternalId__c</fields>
         <fields>Nature__c</fields>
@@ -99,7 +102,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00hTn0000000swU</masterLabel>
+        <masterLabel>00hWU000003Rsgw</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

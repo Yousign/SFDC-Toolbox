@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Send a reminder to the curret signer</description>
+    <flowDefinition>YS_SCR_SRE_SendManualReminder</flowDefinition>
+    <label>Send Reminder</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>
