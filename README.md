@@ -36,6 +36,7 @@ We gives access to Users through `Named Credentials` with `Permission Sets`. Thi
 
 We integrated the Yousign API OpenAPI Specification (OAS) into Salesforce as an External Service. This way, all data structures used by the Yousign API are already created in your organization.
 You can used them to send requests to Yousign API from Salesforce easily through multiple means: Low code (flows), Code (Apex methods).
+
 The schema below describe how the request are constructed in Salesforce to fill automatically the base path of the endpoint and the credentials. It also contains how Yousign replies.
 ![Schema explaining how requests to Yousign from Salesforce are made](/images/SF_YS_SendInformation.jpg)
 
