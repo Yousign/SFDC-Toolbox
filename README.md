@@ -1,6 +1,6 @@
 # Yousign Salesforce Integration Toolbox
 
-You have discovered Yousign API and want to integrate it fast and without issues in Salesforce ? We have good news, you are in the right place !
+You have discovered Yousign API and want to integrate it fast and without issues in Salesforce? We have good news, you are in the right place!
 
 ## Introduction
 
@@ -15,7 +15,7 @@ Check the License tab :point_up:
 
 ### Prerequisites
 
-1. Having an Yousign account with API. If you do not have an API key yet, please create a free [Yousign trial account](https://yousign.app/welcome?lang=en&product=api&signup_source=api_doc) !
+1. Having an Yousign account with API. If you do not have an API key yet, please create a free [Yousign trial account](https://yousign.app/welcome?lang=en&product=api&signup_source=api_doc)!
 2. A Salesforce Developer, Enterprise (or above) Edition. If you do not have a Enterprise (or above) Edition you will need some extra development.
 3. Visual Studio Code. Your Visual Studio Code should be set up with the necessary [Salesforce development tools](https://trailhead.salesforce.com/content/learn/projects/set-up-your-lightning-web-components-developer-tools/install-development-tools) including the [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli).
 
