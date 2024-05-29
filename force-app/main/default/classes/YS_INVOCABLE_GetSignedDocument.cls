@@ -7,10 +7,8 @@
  * @testCoverage      : YS_INVOCABLE_GetSignedDocument_Test
 **/
 public without sharing class YS_INVOCABLE_GetSignedDocument {
-    private static final String BASE_PATH = '/v3';
     private static final String ENDPOINT = '/signature_requests/{0}/documents/download';
     private static final String METHOD = 'GET';
-    private static final Integer TIMEOUT = 30000;
     @testVisible private static final String CLASS_NAME = 'YS_INVOCABLE_GetSignedDocument';
 
     /**
@@ -34,12 +32,8 @@ public without sharing class YS_INVOCABLE_GetSignedDocument {
             throw new YS_Utils.WrappedException(YS_Utils.ERR_UNSUPORTED_DATA, CLASS_NAME);
         }
 
-        HttpRequest request = new HttpRequest();
         try {
-
-            request.setMethod(METHOD);
-            request.setEndpoint('callout:' + YS_Service.getNameCredentials() +  + BASE_PATH + String.format(ENDPOINT, new List<String>{ srIds[0] }));
-            request.setTimeout(TIMEOUT);
+            HttpRequest request = YS_Service.constructRequest(METHOD, ENDPOINT, new List<String>{ srIds[0] });
 			
             HttpResponse response = new Http().send(request);
             res = new Response(response);

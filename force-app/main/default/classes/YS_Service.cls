@@ -7,6 +7,8 @@
  * @testCoverage      : YS_Service_Test
 **/
 public with sharing class YS_Service {
+    private static final String BASE_PATH = '/v3';
+    @testVisible private static final Integer TIMEOUT = 10000;
 
     /**
     * @description return the name of the NameCredential to use
@@ -38,5 +40,44 @@ public with sharing class YS_Service {
         String key;
         YS_Configuration__c orgDefault = YS_Configuration__c.getOrgDefaults();
         return orgDefault.YS_EncodingKey__c;
+    }
+
+    /**
+    * @description Construct endpoint for a callout to the Yousign API
+    * @author Simon Persenot | 29-05-2024 
+    * @param endpoint endpoint to call as shown in the Yousign API documentation
+    * @param params ordered list of variables to place in the endpoint
+    * @return String 
+    **/
+    public static String getEndpoint(String endpoint, List<String> params)
+    {
+        return 'callout:' + getNameCredentials() + BASE_PATH + (params == null || params.isEmpty() ? endpoint : String.format(endpoint, params));
+    }
+
+    /**
+    * @description get default timeout for callouts
+    * @author Simon Persenot | 29-05-2024 
+    * @return Integer 
+    **/
+    public static Integer getTimeout()
+    {
+        return TIMEOUT;
+    }
+
+    /**
+    * @description Contruct the base HTTP request for a callout to the Yousign API
+    * @author Simon Persenot | 29-05-2024 
+    * @param method GET, POST, PUT, DELETE
+    * @param endpoint endpoint to call as shown in the Yousign API documentation
+    * @param params ordered list of variables to place in the endpoint
+    * @return HttpRequest 
+    **/
+    public static HttpRequest constructRequest(String method, String endpoint, List<String> params)
+    {
+        HttpRequest request = new HttpRequest();
+        request.setMethod(method);
+        request.setEndpoint(getEndpoint(endpoint, params));
+        request.setTimeout(getTimeout());
+        return request;
     }
 }

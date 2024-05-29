@@ -7,10 +7,8 @@
  * @testCoverage      : YS_INVOCABLE_UploadDocument_Test
 **/
 public with sharing class YS_INVOCABLE_UploadDocument {
-    private static final String BASE_PATH = '/v3';
     private static final String ENDPOINT = '/signature_requests/{0}/documents';
     private static final String METHOD = 'POST';
-    private static final Integer TIMEOUT = 30000;
     @testVisible private static final String CLASS_NAME = 'YS_INVOCABLE_UploadDocument';
     
     /**
@@ -34,11 +32,7 @@ public with sharing class YS_INVOCABLE_UploadDocument {
             UploadDocumentData input = inputs[0];
             input.checkValidity();
 
-            HttpRequest request = new HttpRequest();
-
-            request.setMethod(METHOD);
-            request.setEndpoint('callout:' + YS_Service.getNameCredentials() +  + BASE_PATH + String.format(ENDPOINT, new List<String>{ input.signatureRequestId }));
-            request.setTimeout(TIMEOUT);
+            HttpRequest request = YS_Service.constructRequest(METHOD, ENDPOINT, new List<String>{ input.signatureRequestId });
 
             ContentDocument cd = [SELECT Id, Title, FileExtension, LatestPublishedVersion.VersionData FROM ContentDocument WHERE Id= :input.fileId LIMIT 1];
 
