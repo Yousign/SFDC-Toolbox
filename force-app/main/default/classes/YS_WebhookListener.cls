@@ -51,7 +51,6 @@ global with sharing class YS_WebhookListener {
             response.responseBody = Blob.valueOf(e.getMessage());
 
             // Errors can also be monitored in the Yousign API Webhooks Logs
-            // ! AS LONG AS THE YS_Utils CLASS IS NOT CUSTOMIZED, THE FOLLOWING LINE DO NOTHING
             YS_Utils.insertExceptionsAsLogs(new List<YS_Utils.WrappedException> { new YS_Utils.WrappedException(e, CLASS_NAME) }, true);
         }
     }

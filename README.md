@@ -56,6 +56,20 @@ To have the latest information in Salesforce, Yousign send webhooks to notified 
 We create some fields and object in Salesforce that match the Yousign object structure. This is a model based on the functionalities provided with this toolbox and do not support all of the features available in Yousign API.
 ![Schema detailing the Yousign Custom Objects and Custom Fields contained in this package](/images/SF_YS_DataModel.jpg)
 
+### Error Management
+
+> Anything that can go wrong will go wrong.
+> *Murphy's Law*
+
+Although it should not happen and however strongly we hope it will not, we have to face it, errors can happen. And as most of the webhook management the work is done asynchronously for permfomance and security reasons we need to log those error to be aware of them.
+
+As we did not want to overcharge your organizations with duplicates custom object and you might already have a Logging Custom Object, we did not included our own `Log__c` SObject here. But some functionned are prepared to use it and to be triggered if an error happen!
+
+So please plug the following methods to your own loggin object or create a new Log__c one for the occasion. The methods `toErrorLog`, `insertExceptionsAsLogs` and `insertLogsFuture` can all be found in the YS_Utils Apex class and can be rapidly customized.
+
+> [!Tip]
+> For our usage we created the following fields `Type__c`, `Source__c`, `ErrorMessage__c` and `ErrorDetails__c` on our `Log__c` SObject.
+
 ### Code Samples
 
 By exploring the code repository you will be able to find reusable and customizable examples. Here is a non-exhaustive list of where to find some examples you might want to work with.
