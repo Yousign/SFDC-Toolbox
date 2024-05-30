@@ -5,7 +5,7 @@ You have discovered Yousign API and want to integrate it fast and without issues
 ## Introduction
 
 This repository contains code examples to integrate the Yousign API into Salesforce. We will connect through named credentials with an API Key.
-The code samples, the initialization package and the documentation provided here complete but does not substitute the [Yousign API documentation](https://developers.yousign.com/docs/introduction-new) where you will find a [dedicated Salesforce section](https://developers.yousign.com/docs/integration-salesforce-yousign) :rocket:
+The code samples, the initialization package and the documentation provided here complete but does not substitute the [Yousign API documentation](https://developers.yousign.com/docs/introduction-new) where you will find a [dedicated Salesforce section](https://developers.yousign.com/docs/integration-salesforce-yousign)&nbsp;:rocket:
 
 ## License
 
@@ -61,14 +61,14 @@ We create some fields and object in Salesforce that match the Yousign object str
 > Anything that can go wrong will go wrong.
 > *Murphy's Law*
 
-Although it should not happen and however strongly we hope it will not, we have to face it, errors can happen. And as most of the webhook management the work is done asynchronously for permfomance and security reasons we need to log those error to be aware of them.
+Although it should not happen (and we hope it will not), we have to face it: errors can happen. As most of the webhook management's work is done asynchronously for permfomance and security reasons, we need to log those errors to be aware of them.
 
-We did not want to overcharge your organizations with duplicates custom object and you might already have a Logging Custom Object so we did not included our own `Log__c` SObject here. But some functionalities are ready to trigger a log creation if an error happen!
+We do not want to overcharge your organization by adding a `Log__c` SObject you might already have. As such we do not include our own `Log__c` SObject here. However some functionalities are ready to trigger a log creation if an error happens.
 
-So please plug the following methods to your own loggin object or create a new `Log__c` one for the occasion. The methods `toErrorLog`, `insertExceptionsAsLogs` and `insertLogsFuture` can all be found in the `YS_Utils` Apex class and can be rapidly customized.
+Hence, feel free to plug the following methods to your own logging object or create a new `Log__c` one for the occasion. The methods `toErrorLog`, `insertExceptionsAsLogs` and `insertLogsFuture` can all be found in the `YS_Utils` Apex Class and can be rapidly customized.
 
 > [!Tip]
-> For our usage we created the following fields `Type__c`, `Source__c`, `ErrorMessage__c` and `ErrorDetails__c` on our `Log__c` SObject.
+> E.g. We created the fields `Type__c`, `Source__c`, `ErrorMessage__c` and `ErrorDetails__c` on our `Log__c` SObject.
 
 ### Code Samples
 
