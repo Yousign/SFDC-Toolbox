@@ -63,9 +63,9 @@ We create some fields and object in Salesforce that match the Yousign object str
 
 Although it should not happen and however strongly we hope it will not, we have to face it, errors can happen. And as most of the webhook management the work is done asynchronously for permfomance and security reasons we need to log those error to be aware of them.
 
-As we did not want to overcharge your organizations with duplicates custom object and you might already have a Logging Custom Object, we did not included our own `Log__c` SObject here. But some functionned are prepared to use it and to be triggered if an error happen!
+We did not want to overcharge your organizations with duplicates custom object and you might already have a Logging Custom Object so we did not included our own `Log__c` SObject here. But some functionalities are ready to trigger a log creation if an error happen!
 
-So please plug the following methods to your own loggin object or create a new Log__c one for the occasion. The methods `toErrorLog`, `insertExceptionsAsLogs` and `insertLogsFuture` can all be found in the YS_Utils Apex class and can be rapidly customized.
+So please plug the following methods to your own loggin object or create a new `Log__c` one for the occasion. The methods `toErrorLog`, `insertExceptionsAsLogs` and `insertLogsFuture` can all be found in the `YS_Utils` Apex class and can be rapidly customized.
 
 > [!Tip]
 > For our usage we created the following fields `Type__c`, `Source__c`, `ErrorMessage__c` and `ErrorDetails__c` on our `Log__c` SObject.
