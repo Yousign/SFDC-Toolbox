@@ -57,6 +57,7 @@
     </types>
     <types>
         <members>YS_SignatureRequest__c</members>
+        <members>Yousign_Try_it_yourself</members>
         <name>CustomTab</name>
     </types>
     <types>
@@ -69,6 +70,7 @@
         <name>ExternalServiceRegistration</name>
     </types>
     <types>
+        <members>Yousign_Demo_UtilityBar</members>
         <members>Yousign_Try_it_yourself</members>
         <members>YS_Signature_Request_Record_Page</members>
         <name>Flexipage</name>
@@ -119,7 +121,6 @@
         <name>QuickAction</name>
 	</types>
     <types>
-        <members>unfiled$public</members>
         <members>unfiled$public/YS_Time_to_Sign_by_Auth_Mode_LFt</members>
         <members>unfiled$public/YS_Signature_Requests_by_Status_WVE</members>
         <name>Report</name>

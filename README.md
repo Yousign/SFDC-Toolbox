@@ -16,14 +16,15 @@ Check the License tab :point_up:
 ### Prerequisites
 
 1. Having an Yousign account with API. If you do not have an API key yet, please create a free [Yousign trial account](https://yousign.app/welcome?lang=en&product=api&signup_source=api_doc)!
-2. A Salesforce Developer, Enterprise (or above) Edition. If you do not have a Enterprise (or above) Edition you will need some extra development.
-3. Visual Studio Code. Your Visual Studio Code should be set up with the necessary [Salesforce development tools](https://trailhead.salesforce.com/content/learn/projects/set-up-your-lightning-web-components-developer-tools/install-development-tools) including the [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli).
+2. A Salesforce Developer, Enterprise (or above) Edition.
+3. In Salesforce go to `Setup > Process Automation > Process Automation Settings` set an admin (generic account if possible) as `Default Workflow User`. Click `Save`
+4. Visual Studio Code. Your Visual Studio Code should be set up with the necessary [Salesforce development tools](https://trailhead.salesforce.com/content/learn/projects/set-up-your-lightning-web-components-developer-tools/install-development-tools) including the [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli).
 
 ### Installation steps
 
 1. Authorize your Salesforce Developer Account within Visual Studio Code. To do this press `command + shift + P` (on a Mac) or `Ctrl + Shift + P` (on Windows) to open the Command Palette. Then type `SFDX:Authorize an Org` and press `Enter`. In the browser window that opens, log into your Salesforce Organization, then on the next screen, click `Allow to grant access`.
 2. Download or clone the SFDC-Toolbox repository.
-3. Deploy the code to Salesforce. To do this, navigate to the `force-app/main/default/manifest/` folder in the menu on the left and right-click default, then select SFDX: Deploy Source to Org. Now when you sign into your Salesforce Developer Edition (account) you will find the clases and Lightning Web Components defined in this project.
+3. Deploy the code to Salesforce. To do this, navigate to the `force-app/main/default/manifest/` folder in the menu on the left and right-click the `package.xml` file, then select SFDX: Deploy Source to Org. Now when you sign into your Salesforce Developer Edition (account) you will find the clases and Lightning Web Components defined in this project.
 
 ## Technical Documentation
 
