@@ -5,6 +5,7 @@ public with sharing class YS_WebhookListener_Test {
     private static void test202() {
         // data setup
         String testName = 'test202';
+        RestResponse res = new RestResponse();
         
         // Set global configuration
         YS_Configuration__c orgDefault = YS_Configuration__c.getOrgDefaults();
@@ -25,7 +26,7 @@ public with sharing class YS_WebhookListener_Test {
         String sha256 = 'sha256=' + EncodingUtil.convertToHex(Crypto.generateMac('HmacSHA256', RestContext.request.requestBody, Blob.valueOf(YS_Service.getEncodingKey())));
         RestContext.request.headers.put('X-Yousign-Signature-256', sha256);
 
-        RestContext.response = new RestResponse();
+        RestContext.response = res;
     
         // Actual test
         Test.startTest();
@@ -33,7 +34,7 @@ public with sharing class YS_WebhookListener_Test {
         Test.stopTest();
     
         // Asserts
-        Assert.areEqual(202, RestContext.response.statusCode, testName + ' #2 > Unexpected reponse status code');
+        Assert.areEqual(202, res.statusCode, testName + ' #2 > Unexpected reponse status code');
     }
     
     @isTest

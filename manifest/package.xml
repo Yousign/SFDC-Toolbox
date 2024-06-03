@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!-- @testCoverage: YS_INVOCABLE_GetSignedDocument_Test,YS_INVOCABLE_UploadDocument_Test,YS_Service_Test,YS_MultipartUtil_Test,YS_Utils_Test,YS_WebhookListener_Test,YS_WebhookDispatcher_Test -->
+<!-- @testCoverage: YS_INVOCABLE_GetSignedDocument_Test,YS_INVOCABLE_UploadDocument_Test,YS_Service_Test,YS_MultipartUtil_Test,YS_Utils_Test,YS_WebhookListener_Test,YS_WebhookDispatcher_Test,YS_INVOCABLE_VisualForceToPDF_Test -->
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>YS_INVOCABLE_GetSignedDocument</members>

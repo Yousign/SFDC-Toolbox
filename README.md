@@ -23,7 +23,9 @@ Check the License tab :point_up:
 1. In Salesforce go to `Setup > Process Automation > Process Automation Settings` set an admin (generic account if possible) as `Default Workflow User`. Click `Save`.
 2. Authorize your Salesforce Developer Account within Visual Studio Code. To do this press `command + shift + P` (on a Mac) or `Ctrl + Shift + P` (on Windows) to open the Command Palette. Then type `SFDX:Authorize an Org` and press `Enter`. In the browser window that opens, log into your Salesforce Organization, then on the next screen, click `Allow to grant access`.
 3. Download or clone the SFDC-Toolbox repository.
-4. Deploy the code to Salesforce. To do this, navigate to the `force-app/main/default/manifest/` folder in the menu on the left and right-click the `package.xml` file, then select SFDX: Deploy Source to Org. Now when you sign into your Salesforce Developer Edition (account) you will find the clases and Lightning Web Components defined in this project.
+4. Deploy the code to Salesforce.
+   1. **On a sandbox/developer organization** Navigate to the `force-app/main/default/manifest/` folder in the menu on the left and right-click the `package.xml` file, then select SFDX: Deploy Source to Org. Now when you sign into your Salesforce Developer Edition (account) you will find the clases and Lightning Web Components defined in this project.
+   2. **On a production organization** Select the `Terminal` menu then click on `New Terminal`. Type `sfdx project deploy start -x manifest/package.xml -l RunSpecifiedTests -t YS_INVOCABLE_GetSignedDocument_Test YS_INVOCABLE_UploadDocument_Test YS_Service_Test YS_MultipartUtil_Test YS_Utils_Test YS_WebhookListener_Test YS_WebhookDispatcher_Test YS_INVOCABLE_VisualForceToPDF_Test --verbose` then press `Enter`.
 
 ## Technical Documentation
 
