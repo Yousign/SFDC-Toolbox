@@ -159,7 +159,6 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <gender>Feminine</gender>
     <label>YS Signature Request</label>
     <nameField>
         <label>YS Signature Request Name</label>
